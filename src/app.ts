@@ -18,13 +18,16 @@ const API = process.env.API;
 const app = fastify({
   logger: false
 });
+
 app.register(cors);
 app.register(redis);
 app.register(logger);
 app.register(mongoose);
+
 app.register(fastifyRecaptcha, {
   recaptcha_secret_key: process.env.RECAPTCHA_SECRETKEY
 })
+
 app.register(jwt, {
   secret: process.env.SECRET,
   sign: {
@@ -112,3 +115,4 @@ connect(configs.mongo.mongoUri, {
   app.logger.error(err);
   process.exit(1);
 });
+

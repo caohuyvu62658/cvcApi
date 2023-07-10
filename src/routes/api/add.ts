@@ -9,6 +9,7 @@ const BodySchema = Type.Object({
   iv: Type.String(),
   encryptedPayload: Type.String()
 });
+
 const NotiBodySchema = Type.Object({
   token: Type.String(),
   iv: Type.String(),
