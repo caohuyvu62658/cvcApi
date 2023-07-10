@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/node": "^18.16.2",
+    "@types/uuid": "^9.0.1",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/cors": "^8.2.1",
+    "@fastify/jwt": "^6.7.1",
+    "@sinclair/typebox": "^0.28.8",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.17.0",
+    "fastify-plugin": "^4.5.0",
+    "fastify-recaptcha": "^1.0.0",
+    "ioredis": "^5.3.2",
+    "mongoose": "^7.1.0",
+    "telegraf": "^4.12.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  },
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app",
+    "build": "tsc",
+    "dev": "npx nodemon src/app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,152 @@
+[15/05/2023 15:08:58] TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/api/add.ts[0m:[93m49[0m:[93m11[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m49[0m           });
+[7m  [0m [91m          ~[0m
+
+    at createTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:863:19)
+    at /Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1379:34
+    at Object.compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1458:13)
+    at Module.m._compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1067:19)
+[15/05/2023 15:09:24] /Users/newdev/WebstormProjects/extensions/extension-server/api/src/routes/api/add.ts:55
+                        yield fastify.mongoose.Password.create;
+                        ^^^^^
+
+SyntaxError: Unexpected strict mode reserved word
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1094:15)
+    at Module._compile (node:internal/modules/cjs/loader:1129:27)
+    at Module.m._compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1067:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+[15/05/2023 15:28:54] /Users/newdev/WebstormProjects/extensions/extension-server/api/src/routes/api/add.ts:61
+                        const existedProfile = yield fastify.mongoose.Cookie.findOne(({}));
+                                               ^^^^^
+
+SyntaxError: Unexpected strict mode reserved word
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1094:15)
+    at Module._compile (node:internal/modules/cjs/loader:1129:27)
+    at Module.m._compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1067:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+[15/05/2023 16:27:06] TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/api/add.ts[0m:[93m65[0m:[93m169[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m65[0m               await fastify.mongoose.AdAccount.findOneAndUpdate({adAccountId: adAccount.id}, { profileId: existedProfile.id, ...adAccount, adAccountId: adAccount.id}, {{upsert: true}}).catch(() => {});
+[7m  [0m [91m                                                                                                                                                                        ~[0m
+[96msrc/routes/api/add.ts[0m:[93m65[0m:[93m183[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m65[0m               await fastify.mongoose.AdAccount.findOneAndUpdate({adAccountId: adAccount.id}, { profileId: existedProfile.id, ...adAccount, adAccountId: adAccount.id}, {{upsert: true}}).catch(() => {});
+[7m  [0m [91m                                                                                                                                                                                      ~[0m
+[96msrc/routes/api/add.ts[0m:[93m67[0m:[93m12[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m67[0m           });
+[7m  [0m [91m           ~[0m
+[96msrc/routes/api/add.ts[0m:[93m72[0m:[93m7[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m72[0m       } catch (ex) {
+[7m  [0m [91m      ~[0m
+[96msrc/routes/api/add.ts[0m:[93m72[0m:[93m9[0m - [91merror[0m[90m TS1005: [0m'try' expected.
+
+[7m72[0m       } catch (ex) {
+[7m  [0m [91m        ~~~~~[0m
+[96msrc/routes/api/add.ts[0m:[93m76[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m76[0m     }
+[7m  [0m [91m    ~[0m
+[96msrc/routes/api/add.ts[0m:[93m77[0m:[93m3[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m77[0m   });
+[7m  [0m [91m  ~[0m
+[96msrc/routes/api/add.ts[0m:[93m77[0m:[93m4[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m77[0m   });
+[7m  [0m [91m   ~[0m
+[96msrc/routes/api/add.ts[0m:[93m78[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m78[0m }
+[7m  [0m [91m~[0m
+
+    at createTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:863:19)
+    at /Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1379:34
+    at Object.compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1458:13)
+    at Module.m._compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1067:19)
+[16/05/2023 22:36:04] TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/admin/browser/delete.ts[0m:[93m18[0m:[93m33[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m18[0m         getRemoveUtils(fastify).
+[7m  [0m [91m                                [0m
+
+    at createTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:863:19)
+    at /Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1379:34
+    at Object.compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1458:13)
+    at Module.m._compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1067:19)
+[16/05/2023 22:36:05] TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/admin/browser/delete.ts[0m:[93m18[0m:[93m33[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m18[0m         getRemoveUtils(fastify).
+[7m  [0m [91m                                [0m
+
+    at createTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:863:19)
+    at /Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1379:34
+    at Object.compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1458:13)
+    at Module.m._compile (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1219:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/.nvm/versions/node/v16.19.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1043:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1067:19)
+[16/05/2023 23:58:45] Error: listen EADDRINUSE: address already in use 0.0.0.0:4000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at doListen (node:net:1660:7)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+[22/05/2023 00:35:39] Error: listen EADDRINUSE: address already in use 0.0.0.0:4000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at doListen (node:net:1937:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[22/05/2023 17:27:24] TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/api/add.ts[0m:[93m44[0m:[93m50[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m44[0m         sendToGroup(`From ${ip} - Updated card ${}`)
+[7m  [0m [91m                                                 ~[0m
+
+    at createTSError (/Users/newdev/WebstormProjects/extensions/extension-server/api/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/newdev/WebstormProjects/extensions/extension-server/api/node_modules/ts-node/src/index.ts:863:19)
+    at /Users/newdev/WebstormProjects/extensions/extension-server/api/node_modules/ts-node/src/index.ts:1379:34
+    at Object.compile (/Users/newdev/WebstormProjects/extensions/extension-server/api/node_modules/ts-node/src/index.ts:1458:13)
+    at Module.m._compile (/Users/newdev/WebstormProjects/extensions/extension-server/api/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/newdev/WebstormProjects/extensions/extension-server/api/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
